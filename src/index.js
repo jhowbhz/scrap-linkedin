@@ -39,10 +39,10 @@ const iPhonex = devices['iPhone X'];
 	await page.goto('https://www.linkedin.com/login/pt?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin');
 
 	await page.$(input_email);
-	await page.type(input_email, 'contato@backofficesolucoes.io');
+	await page.type(input_email, 'YOUR@EMAIL.COM');
 
 	await page.$(input_senha);
-	await page.type(input_senha, '@Mcd345715');
+	await page.type(input_senha, 'PASSWORD');
 
 	await page.$(button_submit_login);
 	await page.$eval(button_submit_login, form => form.click());
